@@ -1,0 +1,5 @@
+{
+    "liveServer.settings.port": 5501,
+    "salesforcedx-vscode-slds.enhancements.autoSuggest": true,
+    "salesforcedx-vscode-slds.basic.deprecated": true
+}
