@@ -143,7 +143,7 @@ p {
 }
 
 #sub-information-container {
-    height: 100%;
+    height: 60%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -165,40 +165,70 @@ p {
     background-color: red;
 }
 
-#grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+.tile_social_network {
+    width: 100%;
     height: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.tile_social_network a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .tile {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;
+}
+
+/* .tile3{
+    height: 100%;
+    background-color: red;
+} */
+
+.tile h4 {
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.tile-title {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tile-image {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .btn-logo {
-    height: 100%;
-    width: 100%;
-    background-size: 30%;
-    background-repeat: no-repeat;
-    filter: invert();
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.linkedin {
-    background-image: url(./media/logolinkedin.png);
-}
-
-.github {
-    background-image: url(./media/logogithub.png);
-}
 
 .cv {
     background-image: url(./media/cv.png);
@@ -223,36 +253,67 @@ p {
 }
 
 
-#technologies-used-container {
+#tools-used-container {
     height: 100%;
     width: 100%;
 }
 
-#grid-container-technologies-used {
+#grid-container-technologies {
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-#grid-container-technologies-used-container {
+#technologies-container{
     width: 100%;
 }
 
-.img-technos {
-    width: 50%;
-    height: 50%;
-
+.grid-container-technologies-web {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 img {
     width: 100px;
 }
 
-#htmljavascss {
-    height: 50%;
-    width: 100%;
+.golang-logo {
+    height: 60px;
+    width: 90px;
+}
+
+.js-logo {
+    height: 64px;
+    width: 64px;
+}
+
+.python-logo {
+    height: 120px;
+    width: 120px;
+}
+
+/*50 is the difference between theses two values*/
+.godot-logo {
+    height: 60px;
+    width: 110px
+}
+
+.csharp-logo {
+    height: 60px;
+    width: 60px;
+}
+
+.rust-logo {
+    height: 64px;
+    width: 64px;
+}
+
+.ubuntu-logo {
+    height: 70px;
+    width: 70px;
 }
 
 #cv {
@@ -319,14 +380,12 @@ img {
     border-right: 10px red solid;
 }
 
-/* #projects-container :nth-child(minmax(1, 3)) {
-    border-right: 2px purple;
-} */
 
-
-
-#techno-used-title-container {
+#tools-used-title-container {
     padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #project-card-title {
