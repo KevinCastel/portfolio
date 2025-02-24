@@ -9,10 +9,20 @@ Here is the colours palette
 
 :root {
     /*new*/
-    --background-body: #38383D;
     --background-header: #2A2A2E;
-    --color-title: #022859;
-    --color-paragraph: #E0E0E2;
+    --background-body: #38383D;
+
+    --title-color: rgb(181, 181, 181);
+    --legend-color: rgb(134, 134, 134);
+    --paragraph-color: rgb(163 163 163);
+
+
+
+    /*new not used anymore*/
+    /* --background-body: #38383D; */
+    /* --background-header: #2A2A2E; */
+    /* --color-title: #022859;
+    --color-paragraph: #E0E0E2; */
 
     /*old*/
     --bg-by: #3C3F58;
@@ -106,8 +116,20 @@ section {
     text-align: center;
 }
 
+#location-container p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--legend-color);
+}
+
 #title-information-container {
     padding: 20px 0;
+}
+
+#title-information-container h3 {
+    font-family: 'Halvatica', Arial, 'Lucida Sans';
+    /* color: rgb(181 181 181); */
+    color: var(--title-color);
 }
 
 #location-container {
@@ -122,10 +144,14 @@ p {
 
 #biography-container {
     margin-top: 20px;
+    line-height: 22px;
+    font-size: 1.1rem;
 }
 
 #biography-container p {
-    color: var(--text);
+    /* color: rgb(134,134,134); */
+    color: var(--paragraph-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #mail-container {
@@ -133,6 +159,11 @@ p {
     justify-content: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+#title-contact-container h3 {
+    color: var(--title-color);
+    font-family: 'Halvatica', Arial, 'Lucida Sans';
 }
 
 #title-contact-container {
@@ -211,6 +242,8 @@ p {
     height: 40%;
     width: 100%;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--legend-color);
 }
 
 .tile-image {
@@ -262,10 +295,10 @@ p {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
-#technologies-container{
+#technologies-container {
     width: 100%;
 }
 
@@ -353,16 +386,17 @@ img {
 }
 
 #projects-title {
-    height: 16%;
+    height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#projects-title h2 {
+#projects-title h3 {
     text-align: center;
-    padding-top: 2%;
+    color: var(--title-color);
+    /* padding-top: 2%; */
 }
 
 .tools-title-type {
@@ -370,44 +404,142 @@ img {
     align-items: center;
     height: 30px;
     width: 100%;
-
 }
 
+.tools-title-type h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--paragraph-color);
+}
 
-#projects-container {
-    height: 80%;
-    width: 90%;
-    background-color: green;
-    border-radius: 2%;
+.project-title {
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow-x: scroll;
+    align-items: center;
+    padding-top: 4px;
 }
 
-.card_border {
-    border-right: 10px red solid;
+.project-title h4 {
+    color: var(--title-color);
+    font-family: 'Halvatica', Arial, 'Lucida Sans';
+    font-size: 1.4rem;
 }
 
-
-#tools-used-title-container {
-    padding-top: 4%;
+.project-image-container {
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.html-techno-logo{
+.project-image-container a {
+    color: red;
+}
+
+.forum-golang-technos {
+    height: 30px;
+    width: 60px;
+}
+
+.learning-deutsch-again-techno-used {
+    height: 46px;
+    width: 46px;
+}
+
+.pinkyball-logo {
+    height: 60px;
+    width: 60px;
+    image-resolution: 1000dpi;
+}
+
+.space-intruder {
+    height: 43px;
+    width: 43px;
+    image-resolution: 10000dpi;
+    border-radius: 10px;
+}
+
+.space-intruder-img-technos {
     height: 40px;
     width: 40px;
 }
 
-.css-techno-logo{
+
+.project-techno-used {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro-project-horizontal-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-description-without-logo p {
+    /* color: var(--title-color);
+    font-family: 'Halvatica', Arial, 'Lucida Sans';
+    font-size: 1.4rem; */
+    color: #707793;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.94rem;
+}
+
+#projects-container {
+    height: 55%;
+    width: 90%;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    scrollbar-color: var(--title-color) var(--text-btn);
+    border: 1mm solid var(--text-btn);
+}
+
+.project-description p {
+    color: #707793;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.94rem;
+}
+
+
+.techno-used-project {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#tools-used-title-container {
+    /* padding-top: 10%; */
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tools-used-title-container h3 {
+    color: var(--title-color);
+    font-family: 'Halvatica', Arial, 'Lucida Sans';
+}
+
+.html-techno-logo {
     height: 40px;
     width: 40px;
 }
 
-.js-techno-logo{
+.css-techno-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.js-techno-logo {
     height: 40px;
     width: 40px;
 }
@@ -417,7 +549,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background-color: var(---background-body);
 }
 
@@ -426,16 +558,33 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    background-color: blue;
+    /* background-color: #022859; */
+    background-color: #333333;
+    max-width: 400px;
+    /*
+    TODO décaler un peu à gauche pour les cartes en position
+    TODO 1 et 3
+    */
 }
 
-.grid-container-environnement{
+.card_padding{
+    padding: 16px;
+}
+
+
+
+.card_border_right{
+    width: 10px;
+    height: 100%;
+}
+
+.grid-container-environnement {
     display: grid;
     height: 16%;
     width: 100%;
-    
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
 }
@@ -446,49 +595,87 @@ img {
 }
 
 .ubuntu-environnement-logo {
-     height: 50px;
-     width: 50px;
-}
-
-.docker-environnement-logo{
-    height: 70px;
-    width: 70px;
-}
-
-.grid-container-datas-and-versionning{
-    height: 14%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: repeat(1,2fr);
-}
-
-.sqlite-logo{
     height: 50px;
     width: 50px;
 }
 
-.project-card h2 {
-    color: chartreuse;
+.docker-environnement-logo {
+    height: 70px;
+    width: 70px;
 }
+
+.grid-container-datas-and-versionning {
+    height: 14%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(1, 2fr);
+}
+
+.sqlite-logo {
+    height: 50px;
+    width: 50px;
+}
+
+/* .project-card h2 {
+    color: chartreuse;
+} */
 
 .git-image {
     height: 50px;
     width: 50px;
 }
 
-.project-intro {
+.project-intro-with-logo {
     width: 100%;
-    height: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.project-intro-without-logo {
+    width: 100%;
+    height: 51%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project-link-container-without-logo {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-link-container-without-logo a {
+    color: var(--legend-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.project-title-without-logo {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 24px; */
+}
+
+.project-title-without-logo h4 {
+    color: var(--title-color);
+    font-family: 'Halvatica', Arial, 'Lucida Sans';
+    font-size: 1.4rem;
+}
+
 .project-description {
     width: 100%;
     height: 100%;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -497,9 +684,13 @@ img {
 }
 
 
+.project-link-container a {
+    color: var(--legend-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .project-link-container {
-    height: 50%;
+    height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -514,9 +705,8 @@ img {
     background: yellow;
 }
 
-#separator {
+/* #separator {
     display: flex;
     justify-content: center;
     align-content: center;
-}
-
+} */
