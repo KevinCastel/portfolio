@@ -86,15 +86,6 @@
                                         alt="python logo">
                                 </div>
                             </div>
-                            <div class="tile tile3">
-                                <div class="tile-title">
-                                    <h4>Godot Engine</h4>
-                                </div>
-                                <div class="tile-image">
-                                    <img class="img-technos godot-logo" src="../media/game-engine/godot-engine.png"
-                                        alt="godot engine">
-                                </div>
-                            </div>
                             <div class="tile tile4">
                                 <div class="tile-title">
                                     <h4>C#</h4>
@@ -153,7 +144,8 @@
                                 <h4>Linux</h4>
                             </div>
                             <div class="tile-image">
-                                <img class="img window-environnement-logo" alt="linux" src="../media/environnement/win10.png" />
+                                <img class="img window-environnement-logo" alt="linux"
+                                    src="../media/environnement/win10.png" />
                             </div>
                         </div>
                         <div class="tile">
@@ -161,7 +153,8 @@
                                 <h4>Windows</h4>
                             </div>
                             <div class="tile-image">
-                                <img class="img ubuntu-environnement-logo" alt="windows" src="../media/environnement/ubuntu.svg" />
+                                <img class="img ubuntu-environnement-logo" alt="windows"
+                                    src="../media/environnement/ubuntu.svg" />
                             </div>
                         </div>
                         <div class="tile">
@@ -169,11 +162,12 @@
                                 <h4>Docker</h4>
                             </div>
                             <div class="tile-image">
-                                <img class="img docker-environnement-logo" alt="docker" src="../media/environnement/docker.png"/>
+                                <img class="img docker-environnement-logo" alt="docker"
+                                    src="../media/environnement/docker.png" />
                             </div>
                         </div>
                     </div>
-                    <div class="tools-tile-type">
+                    <div class="tools-title-type">
                         <h4>Données et versioning</h4>
                     </div>
                     <div class="grid-container-datas-and-versionning">
@@ -182,7 +176,7 @@
                                 <h4>Git</h4>
                             </div>
                             <div class="tile-image">
-                                <img class="git-image" alt="git" src="../media/verisonning/git.png"/>
+                                <img class="git-image" alt="git" src="../media/verisonning/git.png" />
                             </div>
                         </div>
                         <div class="tile">
@@ -190,7 +184,21 @@
                                 <h4>Sqlite</h4>
                             </div>
                             <div class="tile-image">
-                                <img class="sqlite-logo" alt="sqlite" src="../media/bdd/Sqlite.png"/>
+                                <img class="sqlite-logo" alt="sqlite" src="../media/bdd/Sqlite.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools-title-type">
+                        <h4>Game Engine</h4>
+                    </div>
+                    <div>
+                        <div class="tile tile3">
+                            <div class="tile-title">
+                                <h4>Godot Engine</h4>
+                            </div>
+                            <div class="tile-image">
+                                <img class="img-technos godot-logo" src="../media/game-engine/godot-engine.png"
+                                    alt="godot engine">
                             </div>
                         </div>
                     </div>
@@ -209,18 +217,25 @@
                     <div id="project-card-title">
                         <div id="projects-container">
                             <div class="project_card project_border">
-                                <div class="project-intro">
-                                    <div class="project-title">
-                                        <h4>PinkyBall</h4>
+                                <div class="project-intro-with-logo">
+                                    <div class="intro-project-horizontal-container">
+                                        <div class="project-image-container">
+                                            <img class="pinkyball-logo" alt="pinkyball"
+                                                src="https://img.itch.zone/aW1nLzg0Njk2NzQucG5n/32x32%23/LC1gyR.png" />
+                                        </div>
+                                        <div class="project-title">
+                                            <h4>PinkyBall</h4>
+                                        </div>
                                     </div>
                                     <div class="project-link-container">
                                         <a href="https://invitation.itch.io/pinkyball">Accéder à Pinkyball</a>
                                     </div>
+                                    <div class="project-techno-used">
+                                        <img class="img-technos godot-logo" src="../media/game-engine/godot-engine.png"
+                                            alt="godot-engine pinkyball" />
+                                    </div>
                                 </div>
                                 <div class="project-description">
-                                    <div id="separator">
-                                        <hr>
-                                    </div>
                                     <p>Ce projet personnel est un <strong>jeux-vidéo</strong> développé avec
                                         <strong>Godot Engine</strong>
                                         (<strong>GDScript</strong>).
@@ -231,16 +246,20 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="project_card project_border">
-                                <div class="project-intro">
-                                    <div class="project-title">
+                            <div class="card_border_right"></div>
+                            <div class="project_card project_border card_padding">
+                                <div class="project-intro-without-logo">
+                                    <div class="project-title-without-logo">
                                         <h4>Forum - Golang</h4>
                                     </div>
-                                    <div class="project-link-container">
-                                        <a href="https://invitation.itch.io/pinkyball">Accéder à Pinkyball</a>
+                                    <div class="project-link-container-without-logo">
+                                        <a href="https://github.com/KevinCastel/forum-golang">Accéder à Forum - Go</a>
+                                    </div>
+                                    <div class="project-techno-used">
+                                        <img class="forum-golang-technos" alt="golang" src="../media/technos/Golang.png"/>
                                     </div>
                                 </div>
-                                <div class="project-description">
+                                <div class="project-description-without-logo">
                                     <p>Ce projet de Zone01 est un <strong>forum</strong> développé en <strong>Golang,
                                             HTML&CSS(pure), Sqlite</strong>
                                     </p>
@@ -249,19 +268,21 @@
                                             une équipe ainsi qu'à améliorer mes compétences de back-end</u></p>
                                 </div>
                             </div>
-                            <div class="project_card card_border">
-                                <div class="project-intro">
-                                    <div class="project-title">
+                            <div class="card_border_right"></div>
+                            <div class="project_card card_border card_padding">
+                                <div class="project-intro-without-logo">
+                                    <div class="project-title-without-logo">
                                         <h4>Learning Deutsch Again</h4>
                                     </div>
-                                    <div class="project-link-container">
-                                        <a href="">Accéder à LDA</a>
+                                    <div class="project-link-container-without-logo">
+                                        <a href="https://github.com/KevinCastel/learning-deutsch-again">Accéder à
+                                            LDA</a>
+                                    </div>
+                                    <div class="project-techno-used">
+                                        <img class="learning-deutsch-again-techno-used" alt="C# learning-deutsch-again" src="../media/technos/csharp.png"/>
                                     </div>
                                 </div>
-                                <div class="project-description">
-                                    <div id="separator">
-                                        <hr>
-                                    </div>
+                                <div class="project-description-without-logo">
                                     <p>Ce projet personnel est une <strong>application d'apprentissage</strong>
                                         développé en <strong>C# (.net)</strong>
                                     </p>
@@ -269,19 +290,31 @@
                                     <p>En pause, <u>ce projet m'a appris à m'adapter aux attentes utilisateurs.</u></p>
                                 </div>
                             </div>
+                            <div class="card_border_right"></div>
                             <div class="project_card card_border">
-                                <div class="project-intro">
-                                    <div class="project-title">
-                                        <h4>Space Intruder</h4>
+                                <div class="project-intro-with-logo">
+                                    <div class="intro-project-horizontal-container">
+                                        <div class="project-image-container">
+                                            <img class="space-intruder" alt="space-intruder logo"
+                                                src="https://img.itch.zone/aW1nLzE2NTIyNzY0LnBuZw==/347x500/gQvG2E.png" />
+                                        </div>
+                                        <div class="project-title">
+                                            <h4>Space Intruder</h4>
+                                        </div>
                                     </div>
                                     <div class="project-link-container">
                                         <a href="https://gluck777.itch.io/space-intruders">Accéder à ce projet</a>
                                     </div>
+                                    <div class="project-techno-used">
+                                        <img class="img-technos space-intruder-img-technos"
+                                            src="../media/technos/web/html-5.svg" />
+                                        <img class="img-technos space-intruder-img-technos"
+                                            src="../media/technos/web/css.png" />
+                                        <img class="img-technos space-intruder-img-technos"
+                                            src="../media/technos/Javascript.png" />
+                                    </div>
                                 </div>
                                 <div class="project-description">
-                                    <div id="separator">
-                                        <hr>
-                                    </div>
                                     <p>Ce projet Zone01 est une <strong>application de continuité
                                             d'apprentissage</strong>
                                         développé en <strong>Javscript pure et HTML/CSS</strong>
